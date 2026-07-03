@@ -1,0 +1,29 @@
+name: Pagekite
+version: "1.0.0"
+slug: pagekite
+description: Expose Home Assistant via a Pagekite reverse tunnel
+url: https://github.com/YOUR_USERNAME/ha-addon-pagekite
+arch:
+  - aarch64
+  - amd64
+  - armv7
+init: false
+host_network: true
+startup: services
+boot: auto
+options:
+  frontend: your-pagekite-server.example.com:443
+  kitename: ha.your-domain.tld
+  secret: CHANGE_ME
+  ha_port: 8123
+  le_port: 80
+  enable_http: true
+  enable_https: true
+schema:
+  frontend: str
+  kitename: str
+  secret: password
+  ha_port: port
+  le_port: port
+  enable_http: bool
+  enable_https: bool
