@@ -1,16 +1,18 @@
+# https://developers.home-assistant.io/docs/apps/configuration#app-configuration
 name: Pagekite
 version: "1.0.0"
 slug: pagekite
 description: Expose Home Assistant via a Pagekite reverse tunnel
-url: https://github.com/YOUR_USERNAME/ha-addon-pagekite
+url: https://codeberg.org/DoubleMalt/homeassistant-pagekite/src/branch/main/pagekite
 arch:
   - aarch64
   - amd64
-  - armv7
 init: false
 host_network: true
 startup: services
 boot: auto
+stage: stable
+panel_icon: mdi:tunnel
 options:
   frontend: your-pagekite-server.example.com:443
   kitename: ha.your-domain.tld

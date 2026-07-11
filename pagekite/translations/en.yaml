@@ -1,0 +1,22 @@
+configuration:
+  frontend:
+    name: Pagekite frontend
+    description: Pagekite frontend server address (host:port).
+  kitename:
+    name: Kite name
+    description: Public kite name that Pagekite will expose (your subdomain).
+  secret:
+    name: Secret
+    description: Shared secret for authenticating with the Pagekite frontend.
+  ha_port:
+    name: Home Assistant port
+    description: Local port where Home Assistant listens for HTTPS traffic.
+  le_port:
+    name: HTTP port
+    description: Local port used for HTTP traffic (for example Let's Encrypt challenges).
+  enable_http:
+    name: Enable HTTP tunnel
+    description: Expose HTTP traffic through the Pagekite tunnel.
+  enable_https:
+    name: Enable HTTPS tunnel
+    description: Expose HTTPS traffic through the Pagekite tunnel.
