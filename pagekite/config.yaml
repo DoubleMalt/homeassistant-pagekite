@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/apps/configuration#app-configuration
 name: Pagekite
-version: "1.0.0"
+version: "1.0.1"
 slug: pagekite
 description: Expose Home Assistant via a Pagekite reverse tunnel
 url: https://codeberg.org/DoubleMalt/homeassistant-pagekite/src/branch/main/pagekite

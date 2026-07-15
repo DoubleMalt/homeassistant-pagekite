@@ -36,4 +36,4 @@ fi
 
 bashio::log.info "Starting Pagekite: ${KITENAME} -> ${FRONTEND}"
 
-exec pagekite.py "${ARGS[@]}"
+exec /usr/local/bin/pagekite.py "${ARGS[@]}"
